@@ -1,0 +1,8 @@
+﻿Build started...
+1>------ Build started: Project: HomeTask4, Configuration: Debug Any CPU ------
+1>C:\Users\liliya.shapovalova\Documents\AT22\HomeTask4\Program.cs(11,17,11,53): warning CS8600: Converting null literal or possible null value to non-nullable type.
+1>C:\Users\liliya.shapovalova\Documents\AT22\HomeTask4\Program.cs(13,17,13,53): warning CS8600: Converting null literal or possible null value to non-nullable type.
+1>C:\Users\liliya.shapovalova\Documents\AT22\HomeTask4\Program.cs(15,32,15,50): warning CS8604: Possible null reference argument for parameter 'value' in 'char Convert.ToChar(string value)'.
+1>HomeTask4 -> C:\Users\liliya.shapovalova\Documents\AT22\HomeTask4\bin\Debug\net6.0\HomeTask4.dll
+1>Done building project "HomeTask4.csproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
