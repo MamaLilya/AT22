@@ -3,15 +3,16 @@ namespace Strings
 {
     class Program
     {
+        static string AskUser(string var)
+        {
+            Console.Write($"Enter the string {var}: ");
+            return Convert.ToString(Console.ReadLine());
+        }
         static void Main()
         {
-            string xx = ("String XX: "), yy = ("String YY: "), zz = ("String ZZ: ");
-            Console.WriteLine(xx);
-            xx = Convert.ToString(Console.ReadLine());
-            Console.WriteLine(yy);
-            yy = Convert.ToString(Console.ReadLine());
-            Console.WriteLine(zz);
-            zz = Convert.ToString(Console.ReadLine());
+            string xx = AskUser("xx"); 
+            string yy = AskUser("yy");
+            string zz = AskUser("zz");
             bool answer = false;
             if (xx.StartsWith (yy))
                 {

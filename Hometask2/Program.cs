@@ -3,15 +3,16 @@ namespace Rectangular_parallelepiped
 {
     class Program
     {
-        static void Main()
+        static int AskUser(string var)
         {
-            int x = 0, y = 0, z = 0;
-            Console.Write("Enter the length of the edge x: ");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the length of the edge y: ");
-            y = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the length of the edge y: ");
-            z = Convert.ToInt32(Console.ReadLine());
+            Console.Write($"Enter the length of the edge {var}: ");
+            return Convert.ToInt32(Console.ReadLine());
+        }
+            static void Main()
+        {
+            int x = AskUser("x");
+            int y = AskUser("y"); 
+            int z = AskUser("z");
             if (x <= 0)
             {
                 Console.WriteLine("The value cannot be less or equal to 0");
