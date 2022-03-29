@@ -3,17 +3,6 @@ namespace Calculator
 { 
     class Program
 {
-        static void Validation(double a, double b)
-        {
-            if (!double.IsNaN(a))
-            {
-                Console.WriteLine("Enter a number!");
-            }
-            else if (!double.IsNaN(b))
-            {
-                Console.WriteLine("Enter a number!");
-            }
-        }
         static double Plus (double a, double b)
         {
             return a + b;
@@ -49,7 +38,6 @@ namespace Calculator
             a = byte.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number: ");
             b = byte.Parse(Console.ReadLine());
-            Validation(a, b);
             if (c == "1")
             {
                 Console.WriteLine($"Your result is {Plus(a, b)}");
