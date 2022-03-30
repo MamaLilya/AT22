@@ -19,7 +19,7 @@ namespace Calculator
         {
             return a / b;
         }
-        static double Grade(double a, double b)
+        static double Power(double a, double b)
         {
             return Math.Pow(a, b);
         }
@@ -32,12 +32,12 @@ namespace Calculator
                 "Minus - 2, " +
                 "Product - 3, " +
                 "Divide - 4, " +
-                "Grade - 5. ");
+                "Power - 5. ");
             string c = Console.ReadLine();
             Console.WriteLine($"Enter first number: ");
-            a = byte.Parse(Console.ReadLine());
+            a = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number: ");
-            b = byte.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
             if (c == "1")
             {
                 Console.WriteLine($"Your result is {Plus(a, b)}");
@@ -56,7 +56,7 @@ namespace Calculator
             }
             else if (c == "5")
             {
-                Console.WriteLine($"Your result is {Grade(a, b)}");
+                Console.WriteLine($"Your result is {Power(a, b)}");
             }
                     
                 Console.ReadKey();
